@@ -2,7 +2,7 @@
 
 ## React JS, useState, useEffect, MockAPI, SCSS
 
-Demo - https://currency-converter-stde.onrender.com
+Demo - https://collection-qz1x.onrender.com
 
 ## Available Scripts
 
