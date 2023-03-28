@@ -12,7 +12,7 @@ const categories = [
 
 const App = () => {
     const MOCKAPI_URL =
-        'https://64118c946a69ae7545207e4f.mockapi.io/photo_collection';
+        'https://642367f0001cb9fc203e9adf.mockapi.io/photo_collection';
 
     const [categoryId, setCategoryId] = useState(0);
     const [searchValue, setSearchValue] = useState('');
