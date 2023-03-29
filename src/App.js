@@ -25,7 +25,7 @@ const App = () => {
 
         const category = categoryId ? `category=${categoryId}` : '';
 
-        fetch(`${MOCKAPI_URL}?page=${page}&limit=3${category}`)
+        fetch(`${MOCKAPI_URL}?page=${page}&limit=3&${category}`)
             .then((res) => res.json())
             .then((json) => setCollections(json))
             .catch((err) => {
@@ -44,7 +44,7 @@ const App = () => {
                         <li
                             onClick={() => setCategoryId(index)}
                             className={categoryId === index ? 'active' : ''}
-                            key={obj.name}>
+                            key={index}>
                             {obj.name}
                         </li>
                     ))}
@@ -78,6 +78,7 @@ const App = () => {
             <ul className='pagination'>
                 {[...Array(5)].map((el, index) => (
                     <li
+                        key={index}
                         onClick={() => setPage(index + 1)}
                         className={page === index + 1 ? 'active' : ''}>
                         {index + 1}
